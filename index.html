@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <header>
+        <h1 id="title">Gaming Survey Form</h1>
+        <p id="description">Thank you for taking the time to answer the survey</p>
+    </header>
+    <main>
+        <div class="main-bg"></div>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" required id="name" placeholder="Enter your name">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" required id="email" placeholder="Enter your email">
+            <label for="age" id="number-label">Age</label>
+            <input type="number" required id="number" max="150" min= "4" placeholder="Enter your age">
+            <label for="console">In what platform do you play?</label>
+            <select name="console" id="dropdown" required>
+                <option disabled selected value>Select the platform</option>
+                <option value="play">Playstation 4</option>
+                <option value="xbox">Xbox One</option>
+                <option value="pc">PC</option>
+                <option value="Nintendo-Switch">Nintendo Switch</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="form-section">
+                <p>Would you recommend the platform </p>
+                <label for="Definitely">
+                    <input type="radio" name="user-recommend" id="Definitely" value="Definitely" checked>
+                Definitely</label>
+                <label for="Maybe">
+                    <input type="radio" name="user-recommend" id="Maybe" value="Maybe">
+                Maybe</label>
+                <label for="n-sure">
+                    <input type="radio" name="user-recommend" id="n-sure" value="Not sure">
+                Not sure</label>
+            </div>
+            <label for="favorite-game">What is your favorite-game?</label>
+            <input type="text" placeholder="Enter your favorite game" id="favorite-game">
+            <div class="form-section">
+                <p>What kind of games do you like?<span>(Check all that apply)</span></p>
+                <label for="FPS">
+                    <input type="checkbox" name="prefer" value="FPS" id="FPS">
+                    FPS</label>
+                <label for="roleplay">
+                    <input type="checkbox" name="prefer" value="roleplay" id="roleplay">
+                Roleplay</label>
+                <label for="moba">
+                    <input type="checkbox" name="prefer" value="MOBA" id="moba">
+                MOBA</label>
+                <label for="sandbox">
+                    <input type="checkbox" name="prefer" value="Sandbox" id="sandbox">
+                Sandbox</label>
+                <label for="simulacion">
+                    <input type="checkbox" name="prefer" value="Simulation" id="simulacion">
+                Simulation</label>
+            </div>
+            <p>Any comments or sugestion?</p>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments..."></textarea>
+            <button type="submit" id="submit" class="btn-grad">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.freepik.com/vectors/technology">Technology vector created by freepik - www.freepik.com</a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
